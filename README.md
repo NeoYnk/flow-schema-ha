@@ -1,8 +1,8 @@
-# flow-schema-madz (`google-flow-card`)
+# flow-schema-madz (`madz-flow-card`)
 
 Eigenständiger Fork der [schematic-flow-card v0.1.0](https://github.com/birkir/home-assistant-schematic-flow-card/releases/tag/v0.1.0)
 für Home Assistant. Die Karte läuft unter dem eigenen Custom-Element-Namen
-**`google-flow-card`** und kann daher parallel zum Original installiert werden.
+**`madz-flow-card`** und kann daher parallel zum Original installiert werden.
 
 Datei: [`flow-schema-madz.js`](flow-schema-madz.js)
 
@@ -11,7 +11,7 @@ Datei: [`flow-schema-madz.js`](flow-schema-madz.js)
 1. `flow-schema-madz.js` nach `config/www/` kopieren.
 2. Ressource hinzufügen: *Einstellungen → Dashboards → Ressourcen* →
    `/local/flow-schema-madz.js` (Typ: JavaScript-Modul).
-3. Karte verwenden mit `type: custom:google-flow-card`.
+3. Karte verwenden mit `type: custom:madz-flow-card`.
 
 Die komplette Konfiguration (Canvas, Nodes, Pipes, Header-Chips, Annotationen,
 Farbskalen, Animationen) entspricht dem Original. Zusätzlich gibt es die
@@ -21,10 +21,10 @@ unten beschriebenen 12 optionalen Styling-Parameter für Nodes.
 
 | Stelle | Original | Fork |
 | --- | --- | --- |
-| Custom Element | `schematic-flow-card` | `google-flow-card` |
-| Editor-Element | `schematic-flow-card-editor` | `google-flow-card-editor` |
-| Kartenauswahl (`customCards`) | `schematic-flow-card` | `google-flow-card` |
-| ES-Export | `SchematicFlowCard` | `GoogleFlowCard` |
+| Custom Element | `schematic-flow-card` | `madz-flow-card` |
+| Editor-Element | `schematic-flow-card-editor` | `madz-flow-card-editor` |
+| Kartenauswahl (`customCards`) | `schematic-flow-card` | `madz-flow-card` |
+| ES-Export | `SchematicFlowCard` | `MadzFlowCard` |
 | Neue Funktion | – | `wt_param()` (generische Stop-Interpolation) |
 | Node-Rendering (`jt`) | – | setzt die neuen Parameter als Inline-Styles / SVG-Attribute |
 
@@ -67,7 +67,7 @@ Jeder Parameter kann **global auf der Node** gesetzt werden und/oder
 ## Beispiel
 
 ```yaml
-type: custom:google-flow-card
+type: custom:madz-flow-card
 title: Wärmepumpe
 canvas:
   width: 600
